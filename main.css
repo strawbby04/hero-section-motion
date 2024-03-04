@@ -10,6 +10,7 @@
   }
 
   .motion-wrapper {
+    background-color: lightyellow;
     display: grid;
     /* height: 100%; */
     place-items: center;
@@ -79,3 +80,36 @@
         #middle-circle{
             fill:yellow;
 }  
+/* settings for desktop */
+@media only screen and (min-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+    svg{
+        transform: scale(.5);
+        transform-origin: top;
+    }
+
+    .motion-wrapper {
+        background-color: lightyellow;
+        display: grid;
+        /* height: 100%; */
+        place-items: center;
+        position: relative;
+        animation: colorShift 7s infinite;
+      }
+    
+    
+      .motion-text-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, -50%);
+        transform-origin: top;
+        text-align: center;
+        color: tan;
+        font-size: 50px;
+        width: 80%;
+        }
+      
+  }
