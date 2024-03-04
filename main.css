@@ -1,0 +1,81 @@
+  /* Background image in motion, imported as an svg */
+
+  .motion-wrapper {
+    background-color: lightyellow;
+    display: grid;
+    /* height: 100%; */
+    place-items: center;
+    position: relative;
+    animation: colorShift 7s infinite;
+  }
+
+  .motion-wrapper {
+    display: grid;
+    /* height: 100%; */
+    place-items: center;
+    position: relative;
+    animation: colorShift 7s infinite;
+  }
+  .motion-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: tan;
+    font-size: 50px;
+    width: 80%;
+    }
+  
+  /* Animation for top circle */
+  #top-circle{
+    animation: color-shift-top 7s infinite;
+}
+
+
+  @keyframes color-shift-top{
+
+        0%, 100%{
+            fill:rgb(44, 212, 201);
+            }
+            50%{
+                fill:rgb(13, 190, 107);
+            }
+        }
+        #top-circle{
+            fill:yellow;
+}
+
+  /* Animation for middle circle */
+  #middle-circle{
+    animation: color-shift-middle 7s infinite;
+}
+
+
+  @keyframes color-shift-middle{
+
+        0%, 100%{
+            fill:rgb(212, 44, 145);
+            }
+            50%{
+                fill:rgb(22, 13, 190);
+            }
+        }
+    
+  /* Animation for bottom circle */
+  #bottom-circle{
+    animation: color-shift-bottom 7s infinite;
+}
+
+  @keyframes color-shift-bottom{
+
+        0%, 100%{
+            fill:red
+            }
+            50%{
+                fill:rgb(234, 242, 6);
+            }
+        }
+        #middle-circle{
+            fill:yellow;
+}  
