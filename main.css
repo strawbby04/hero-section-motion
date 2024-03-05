@@ -25,7 +25,7 @@
     max-width: 400px; 
     }
   /* Animation for top circle */
-  #top-circle{
+  #st0{
     animation: color-shift-top 7s infinite;
 }
 
@@ -33,10 +33,18 @@
   @keyframes color-shift-top{
 
         0%, 100%{
-            fill:rgb(44, 212, 201);
+            fill:rgb(255, 70, 70);
+            stroke: aqua;
+            stroke-width: 5px;
+            transform: scale(.5);
             }
             50%{
-                fill:rgb(13, 190, 107);
+                fill:rgb(0, 0, 0);
+                stroke: aqua;
+                stroke-width: 25px;
+                transform: scale(.8);
+                transform-origin: center;
+                transform: rotate(60deg)
             }
         }
 
@@ -77,3 +85,4 @@ svg{
       max-width: 300px; /* Adjust maximum width for smaller screens */
   }
   }
+#st0{fill:#A97C50;}
