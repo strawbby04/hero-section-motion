@@ -11,15 +11,6 @@
     position: relative;
     animation: colorShift 7s infinite;
   }
-
-  .motion-wrapper {
-    background-color: lightyellow;
-    display: grid;
-    /* height: 100%; */
-    place-items: center;
-    position: relative;
-    animation: colorShift 7s infinite;
-  }
   .motion-text-container{
     position: absolute;
     top: 50%;
@@ -48,15 +39,11 @@
                 fill:rgb(13, 190, 107);
             }
         }
-        #top-circle{
-            fill:yellow;
-}
 
   /* Animation for middle circle */
   #middle-circle{
     animation: color-shift-middle 7s infinite;
 }
-
 
   @keyframes color-shift-middle{
 
